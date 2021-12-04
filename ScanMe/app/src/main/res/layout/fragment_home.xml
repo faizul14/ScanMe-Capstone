@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        app:cardBackgroundColor="@color/gradient"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/user_home"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/human_home" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginTop="84dp"
+        app:cardBackgroundColor="@color/gradient"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:textSize="20dp"
+                android:textColor="@color/gradient"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/gradient"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:textSize="20dp"
+                android:textColor="@color/gradient"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/gradient"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:textSize="20dp"
+                android:textColor="@color/gradient"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
