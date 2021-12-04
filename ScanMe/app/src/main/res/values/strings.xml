@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scan Me</string>
+    <string name="title_home">Home</string>
+    <string name="user_home">Ega Almira!!</string>
+    <string name="welcome">SELAMAT DATANG,</string>
+    <string name="content_artikel">"lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet lorem ipsum dolor is amet "</string>
+    <string name="title_scan">Scan Me</string>
+    <string name="title_riwayat">Riwayat</string>
+</resources>
