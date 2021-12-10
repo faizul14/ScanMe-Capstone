@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/downbar"
+    tools:context=".ui.resultScanMe.DetailScanMe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:text="Hasil Scan Me"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/img_sad"
+        app:layout_constraintEnd_toEndOf="@+id/img_sad"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/img_sad" />
+
+    <ImageView
+        android:id="@+id/img_sad"
+        android:layout_width="206dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/icon_vector_sad"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:text="70%"
+        android:textColor="@color/gradient"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_sad"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/img_sad"
+        app:layout_constraintTop_toBottomOf="@+id/img_sad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

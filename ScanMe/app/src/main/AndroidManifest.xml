@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScanMe">
-        <activity android:name=".ui.artikel.ArtikelDetailActivity"></activity>
+        <activity android:name=".ui.scanmeaction.ScanMeActionActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.welcome.WelcomeActivity" />
+        <activity android:name=".ui.resultScanMe.DetailScanMe" />
+        <activity android:name=".ui.artikel.ArtikelDetailActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.splashscreen.SplashScreen"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gradient">#FF4328</color>
+    <color name="upbar">#FF4328</color>
+    <color name="downbar">#C70C0C</color>
 </resources>

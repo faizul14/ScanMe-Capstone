@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.scanme.ui.dashboard.DashboardFragment"
+        android:name="com.example.scanme.ui.scanme.ScanMeFragment"
         android:label="@string/title_scan"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_scanme" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.scanme.ui.notifications.NotificationsFragment"
+        android:name="com.example.scanme.ui.riwayat.RiwayatFragment"
         android:label="@string/title_riwayat"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_riwayat" />
 </navigation>
