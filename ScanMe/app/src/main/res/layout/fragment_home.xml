@@ -87,15 +87,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/test"
+                android:src="@drawable/fotoartikel1"
                 android:scaleType="fitXY"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Judul Artikel"
-                android:textSize="20dp"
+                android:text="Atasi Gebetan yang Ghosting Tiba-tiba dengan 5 Cara Ini. Bye Kecewa dan Patah Hati!"
+                android:textSize="12sp"
                 android:textColor="@color/gradient"
-                android:background="@color/white"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="6dp"
                 android:layout_marginBottom="6dp"
@@ -123,15 +122,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/test"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/fotoartikel2" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Judul Artikel"
-                android:textSize="20dp"
+                android:text="Jenuh dalam Hubungan: Jangan Nyerah Dulu, Ini 5 Cara Mengatasinya!"
+                android:textSize="12sp"
                 android:textColor="@color/gradient"
-                android:background="@color/white"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="6dp"
                 android:layout_marginBottom="6dp"
@@ -158,15 +157,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/test"
+                android:src="@drawable/fotoartikel3"
                 android:scaleType="fitXY"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Judul Artikel"
-                android:textSize="20dp"
+                android:text="Menerima Keadaan Diri Bukan Berarti Pasrah. Justru Jadi Ajang Belajar dan Perbaiki Kesalahan"
+                android:textSize="12sp"
                 android:textColor="@color/gradient"
-                android:background="@color/white"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="6dp"
                 android:layout_marginBottom="6dp"
