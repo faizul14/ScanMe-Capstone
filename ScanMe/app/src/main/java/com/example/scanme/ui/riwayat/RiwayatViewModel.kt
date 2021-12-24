@@ -1,13 +1,13 @@
 package com.example.scanme.ui.riwayat
 
+import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.scanme.Repository.RiwayatRepository
+import com.example.scanme.db.Riwayat
 
-class RiwayatViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
-    }
-    val text: LiveData<String> = _text
+class RiwayatViewModel(application: Application)  : ViewModel() {
+    private val mRiwayatRepository: RiwayatRepository = RiwayatRepository(application)
+    fun getAllNotes(): LiveData<List<Riwayat>> = mRiwayatRepository.getAllNotes()
 }

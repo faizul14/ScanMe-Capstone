@@ -3,10 +3,12 @@ package com.example.scanme.ui.scanmeaction
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.scanme.data.data.DataEntity
 import com.example.scanme.databinding.ItemScanAfterChoseBinding
 import com.example.scanme.databinding.ItemScanBeforeChoseBinding
+import com.example.scanme.helper.MyDiffUTil
 
 class AdapterScanMeAfterAction:RecyclerView.Adapter<AdapterScanMeAfterAction.IndikasiViewHolder>() {
     private val listAfterIndikasi = ArrayList<DataEntity>()
@@ -15,10 +17,11 @@ class AdapterScanMeAfterAction:RecyclerView.Adapter<AdapterScanMeAfterAction.Ind
         if (data != null){
             listAfterIndikasi.clear()
             listAfterIndikasi.addAll(data)
+
         }
     }
 
-    class IndikasiViewHolder(private val binding: ItemScanAfterChoseBinding) :
+    class IndikasiViewHolder(val binding: ItemScanAfterChoseBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun data ( dataIndikasi : DataEntity){
             binding.contentAfterScan.text = dataIndikasi.content

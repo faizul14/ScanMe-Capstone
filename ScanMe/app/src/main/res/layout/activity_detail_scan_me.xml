@@ -8,39 +8,52 @@
     tools:context=".ui.resultScanMe.DetailScanMe">
 
     <TextView
+        android:id="@+id/status_scan"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="184dp"
         android:text="Hasil Scan Me"
-        android:textSize="24sp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/img_sad"
-        app:layout_constraintEnd_toEndOf="@+id/img_sad"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/img_sad" />
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/img_sad"
         android:layout_width="206dp"
         android:layout_height="200dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/icon_vector_sad"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/status_scan" />
+
+    <ImageView
+        android:id="@+id/img_hapy"
+        android:layout_width="206dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_vector_happy"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_scan" />
 
     <TextView
+        android:id="@+id/range_scan"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="268dp"
         android:text="70%"
         android:textColor="@color/gradient"
-        android:textSize="44sp"
-        app:layout_constraintEnd_toEndOf="@+id/img_sad"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/img_sad"
-        app:layout_constraintTop_toBottomOf="@+id/img_sad" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_scan" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

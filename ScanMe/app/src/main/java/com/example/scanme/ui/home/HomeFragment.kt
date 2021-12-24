@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.scanme.R
+import com.example.scanme.data.datadummy.DataDumy
 import com.example.scanme.databinding.FragmentHomeBinding
 import com.example.scanme.ui.artikel.ArtikelDetailActivity
 
@@ -40,8 +41,38 @@ class HomeFragment : Fragment() {
         })
 
         binding.cardView2.setOnClickListener{
-            Toast.makeText(context, "Chose Artikel Mental Healty", Toast.LENGTH_SHORT).show()
+            val bundle = Bundle()
+            val conntent = DataDumy.mdataArtikel()[0].contentArtikel
+            val title = DataDumy.mdataArtikel()[0].jdudulArtikel
+
+            bundle.putString("cocntent", conntent)
+            bundle.putString("title", title)
             val move = Intent (context, ArtikelDetailActivity::class.java)
+            move.putExtras(bundle)
+            startActivity(move)
+        }
+
+        binding.cardView3.setOnClickListener{
+            val bundle = Bundle()
+            val conntent = DataDumy.mdataArtikel()[1].contentArtikel
+            val title = DataDumy.mdataArtikel()[1].jdudulArtikel
+
+            bundle.putString("cocntent", conntent)
+            bundle.putString("title", title)
+            val move = Intent (context, ArtikelDetailActivity::class.java)
+            move.putExtras(bundle)
+            startActivity(move)
+        }
+
+        binding.cardView4.setOnClickListener{
+            val bundle = Bundle()
+            val conntent = DataDumy.mdataArtikel()[2].contentArtikel
+            val title = DataDumy.mdataArtikel()[2].jdudulArtikel
+
+            bundle.putString("cocntent", conntent)
+            bundle.putString("title", title)
+            val move = Intent (context, ArtikelDetailActivity::class.java)
+            move.putExtras(bundle)
             startActivity(move)
         }
 

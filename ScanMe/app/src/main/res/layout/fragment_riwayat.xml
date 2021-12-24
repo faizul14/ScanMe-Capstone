@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="15dp"
     tools:context=".ui.riwayat.RiwayatFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_riwayat"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:layout_marginStart="8dp"
@@ -23,6 +25,7 @@
 
     <ImageView
         android:id="@+id/imageView2"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_vector_sad"
@@ -33,6 +36,7 @@
         app:layout_constraintVertical_bias="0.44" />
 
     <TextView
+        android:visibility="visible"
         android:layout_width="330dp"
         android:layout_height="42dp"
         android:layout_marginTop="40dp"

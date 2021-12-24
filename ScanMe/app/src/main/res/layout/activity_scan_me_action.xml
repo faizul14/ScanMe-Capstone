@@ -161,6 +161,14 @@
                 android:visibility="visible"
                 tools:listitem="@layout/item_scan_after_chose" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PILIH INDIKASI YANG ANDA ALAMI"
+                android:gravity="center"
+                android:textColor="@color/upbar"
+                android:textSize="20sp"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_before"
                 android:paddingTop="4dp"
